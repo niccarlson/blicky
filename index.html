@@ -81,29 +81,18 @@ background-size: 1800% 1800%;
 <center><img src="https://images.genius.com/4e360263e9150c42fe300a2942cadcaa.900x900x1.jpg" alt="Blicky" height="40%" width="40%"></center>
 
 <audio id="player" src="music.mp3"></audio>
+<audio id="player1" src="music1.mp3"></audio>
 <div>
    
     <center> 
-      <input type="button" id="playBtn" class="enjoy-css" value="click here if audio isn't playing" onclick="document.getElementById('player').play()"/> </center>
+      <input type="button" id="playBtng" class="enjoy-css" value="GUMMO" onclick="document.getElementById('player').play()"/> 
+     <input type="button" id="playBtnk" class="enjoy-css" value="KEKE" onclick="document.getElementById('player1').play()"/></center>
 <script type="text/javascript" script-name="bubbler-one" src="http://use.edgefonts.net/bubbler-one.js"></script>
   
 </div>
 
 
 </div>
-<script>
-var myAudio = document.getElementById('player');
-
-if (myAudio.duration > 0 && !myAudio.paused) {
-
-    document.getElementById('playBtn').style.visibility = "hidden"
-
-} else {
-
-    document.getElementById('playBtn').style.visibility = "visible"
-
-}
-</script>
 </body>
 </html>
 
