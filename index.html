@@ -49,17 +49,30 @@ background-size: 1800% 1800%;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-<body onload="document.getElementById('player').play()">
+<body>
 <div class="wrapper"><center><h1>blicky got the stiffy uh</h1></center>
 
 <audio id="player" src="music.mp3"></audio>
 <div>
-    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').play()" id="playBtn">Play</button>
     
 </div>
 
 
 </div>
+<script>
+var myAudio = document.getElementById('player');
+
+if (myAudio.duration > 0 && !myAudio.paused) {
+
+    document.getElementById('playBtn').style.visibility = "hidden"
+
+} else {
+
+    document.getElementById('playBtn').style.visibility = "visible"
+
+}
+</script>
 </body>
 </html>
 
