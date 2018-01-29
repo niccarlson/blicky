@@ -29,7 +29,7 @@
 }
 
 .wrapper {
-    height: 100%;
+    height: 106%;
     width: 100%;
     left: 0;
     right: 0;
@@ -108,7 +108,7 @@
   <![endif]-->
     </head>
     <body onload="document.getElementById('player').play()">
-        <div class="wrapper">
+        <div class="wrapper" id="wrapper1">
             <input type="button" id="playBtn" class="enjoy-css" value="DID YOU SEE NAV" onclick="document.getElementById('texti').innerHTML='guys seriously has anyone seen nav hes been missing for awhile now'; document.getElementById('player').src = 'did.mp3'; document.getElementById('player').load(); document.getElementById('player').play();" />
             <input type="button" id="playBtn" class="enjoy-css" value="H2O" onclick="document.getElementById('texti').innerHTML='wet wet wet wet wet'; document.getElementById('player').src = 'h2o.mp3'; document.getElementById('player').load(); document.getElementById('player').play(); document.getElementById('player').play();" />
             <input type="button" id="playBtn" class="enjoy-css" value="ENERGY" onclick="document.getElementById('texti').innerHTML='gold tooth on'; document.getElementById('player').src = 'energy.mp3'; document.getElementById('player').load(); document.getElementById('player').play();" />
@@ -123,10 +123,10 @@
             <audio id="player" src="music.mp3"></audio>
             <div>
                 <center>
-                    <input type="button" class="enjoy-css" value="CAT NINJA" onclick="document.getElementById('main-wrap').style.display='block'; document.getElementById('texti').innerHTML='scroll down'" />
+                    <input type="button" class="enjoy-css" value="CAT NINJA" onclick="document.getElementById('main-wrap').style.display='block'; document.getElementById('texti').innerHTML='scroll down'; document.getElementById('wrapper1').style='height: 225%;'" />
                 </center>
                 <div style="padding-left: 50px; padding-right: 50px; padding-bottom: 50px;"> 
-</div>
+
                 <script type="text/javascript" script-name="bubbler-one" src="http://use.edgefonts.net/bubbler-one.js"></script>
             </div>
            
@@ -147,6 +147,7 @@
 <embed src="/catninja.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" play="true" loop="true" wmode="transparent" allowfullscreen="true" flashvars="" type="application/x-shockwave-flash" align="middle"  height="600px" width="800px"></embed>
 </object>
 </div></div></div>
+</div>
 </div>
 </div>
 <!-- end main-wrap -->
